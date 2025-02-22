@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add To Cart</title>
+    <link rel="stylesheet" href="cart.css">
+</head>
+
+<body>
+    <div class="container">
+        <h3 style="text-align: center; color: #ff4d79;">YAY! It's BOGO</h3>
+
+        <div class="unit" onclick="toggleDetails(1)">
+            <input type="radio" name="unit" id="unit1">
+            <label for="unit1">1 Unit <span class="discount">10% Off</span></label>
+            <span class="price">$10.00 USD</span>
+            <div class="details" id="details2">
+                <div class="dropdown-container">
+                    <label>#1 Size: <select>
+                            <option>S</option>
+                            <option>M</option>
+                            <option>L</option>
+                        </select></label>
+                    <label> Colour: <select>
+                            <option>Black</option>
+                            <option>White</option>
+                        </select></label>
+                </div>
+                <div class="dropdown-container">
+                    <label>#2 Size: <select>
+                            <option>S</option>
+                            <option>M</option>
+                            <option>L</option>
+                        </select></label>
+                    <label> Colour: <select>
+                            <option>Black</option>
+                            <option>White</option>
+                        </select></label>
+                </div>
+            </div>
+        </div>
+
+        <div class="unit popular" onclick="toggleDetails(2)">
+            <input type="radio" name="unit" id="unit2">
+            <label for="unit2">2 Units <span class="discount">20% Off</span></label>
+            <span class="price">$18.00 USD</span>
+            <div class="details" id="details2">
+                <div class="dropdown-container">
+                    <label>#1 Size: <select>
+                            <option>S</option>
+                            <option>M</option>
+                            <option>L</option>
+                        </select></label>
+                    <label> Colour: <select>
+                            <option>Black</option>
+                            <option>White</option>
+                        </select></label>
+                </div>
+                <div class="dropdown-container">
+                    <label>#2 Size: <select>
+                            <option>S</option>
+                            <option>M</option>
+                            <option>L</option>
+                        </select></label>
+                    <label> Colour: <select>
+                            <option>Black</option>
+                            <option>White</option>
+                        </select></label>
+                </div>
+            </div>
+        </div>
+
+        <div class="unit" onclick="toggleDetails(3)">
+            <input type="radio" name="unit" id="unit3">
+            <label for="unit3">3 Units <span class="discount">30% Off</span></label>
+            <span class="price">$24.00 USD</span>
+            <div class="details" id="details2">
+                <div class="dropdown-container">
+                    <label>#1 Size: <select>
+                            <option>S</option>
+                            <option>M</option>
+                            <option>L</option>
+                        </select></label>
+                    <label> Colour: <select>
+                            <option>Black</option>
+                            <option>White</option>
+                        </select></label>
+                </div>
+                <div class="dropdown-container">
+                    <label>#2 Size: <select>
+                            <option>S</option>
+                            <option>M</option>
+                            <option>L</option>
+                        </select></label>
+                    <label> Colour: <select>
+                            <option>Black</option>
+                            <option>White</option>
+                        </select></label>
+                </div>
+            </div>
+        </div>
+
+        <p style="color: #ff4d79; text-align: left; font-weight: bold;">Free Delivery</p>
+        <button class="add-to-cart" onclick="addToCart()">+ Add to Cart</button>
+    </div>
+    <script src="cart.js"></script>
+</body>
+
+</html>
